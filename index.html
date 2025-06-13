@@ -6,53 +6,57 @@
     <title>Explorador de Legados Artísticos: ¿Y si...?</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            font-family: 'Georgia', 'Times New Roman', Times, serif; /* Fuente más literaria */
+            line-height: 1.7;
             margin: 0;
             padding: 20px;
-            background-color: #f0f2f5;
-            color: #333;
+            background-color: #fdfcf9; /* Un fondo más cálido */
+            color: #4a4a4a;
         }
         .readme-content {
             max-width: 900px;
             margin: 20px auto;
             background: #ffffff;
-            padding: 25px 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 30px 45px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.07);
             text-align: left;
+            border-left: 5px solid #d4c8b0; /* Un acento de color */
         }
         .readme-content h1, .readme-content h2 {
-            color: #0056b3;
-            border-bottom: 2px solid #eef;
-            padding-bottom: 5px;
-            margin-top: 30px;
+            color: #5c5241; /* Tono tierra oscuro */
+            border-bottom: 1px solid #e0d9cd;
+            padding-bottom: 8px;
+            margin-top: 35px;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Un contraste para títulos */
         }
         .readme-content h1 {
             text-align: center;
-            font-size: 2em;
+            font-size: 2.2em;
         }
         .readme-content h2 {
-            font-size: 1.6em;
+            font-size: 1.7em;
         }
         .readme-content p, .readme-content li {
-            font-size: 1em;
-            color: #444;
+            font-size: 1.05em; /* Ligeramente más grande para lectura */
+            color: #555;
+            margin-bottom: 1.2em;
         }
         .readme-content ul, .readme-content ol {
-            padding-left: 20px;
+            padding-left: 25px;
         }
         .readme-content code {
-            background-color: #e8e8e8;
-            padding: 2px 5px;
+            background-color: #f0ebe5;
+            padding: 3px 6px;
             border-radius: 4px;
             font-family: 'Courier New', Courier, monospace;
+            color: #7a6a53;
         }
         .readme-content hr {
             border: 0;
             height: 1px;
-            background: #ddd;
-            margin: 40px 0;
+            background: #e0d9cd;
+            margin: 50px 0;
         }
         .banner-image {
             display: block;
@@ -60,21 +64,23 @@
             max-width: 100%;
             height: auto;
             border-radius: 8px;
+            opacity: 0.9;
         }
 
         .app-container {
             max-width: 800px;
             margin: 40px auto;
             background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
             text-align: center;
         }
         .app-container h1 {
-            color: #0056b3;
-            margin-bottom: 10px;
-            font-size: 1.8em;
+            color: #5c5241;
+            margin-bottom: 15px;
+            font-size: 2em;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             border-bottom: none;
         }
         .app-container h1 .emoji-title {
@@ -82,190 +88,152 @@
             vertical-align: middle;
         }
         .app-container p.subtitle {
-            font-size: 1.1em;
-            color: #555;
-            margin-bottom: 30px;
+            font-size: 1.15em;
+            color: #777;
+            margin-bottom: 35px;
         }
         .app-container label {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             font-weight: bold;
-            color: #333;
+            color: #5c5241;
             text-align: left;
+            font-size: 1.1em;
         }
         .app-container input[type="text"] {
-            width: calc(100% - 24px);
-            padding: 12px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
+            width: calc(100% - 28px);
+            padding: 14px;
+            margin-bottom: 25px;
+            border: 1px solid #d4c8b0;
             border-radius: 5px;
             font-size: 1em;
             box-sizing: border-box;
+            font-family: 'Georgia', Times, serif;
         }
         .app-container button {
             display: inline-block;
-            background: #28a745; /* Verde éxito */
+            background: #8d7b60; /* Un verde más apagado/tierra */
             color: #fff;
-            padding: 12px 25px;
+            padding: 14px 28px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             font-size: 1.1em;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             transition: background-color 0.3s ease;
-            margin-right: 10px; /* Espacio entre botones */
+            margin-right: 12px;
         }
-        .app-container button.secondary { /* Estilo para botón secundario */
-            background: #007bff; /* Azul */
+        .app-container button.secondary {
+            background: #a89c8a; 
         }
         .app-container button.secondary:hover {
-            background: #0056b3;
+            background: #978b7a;
         }
         .app-container button:hover {
-            background: #218838;
+            background: #7b6a50;
         }
         #results {
-            margin-top: 30px;
+            margin-top: 35px;
             text-align: left;
-            border-top: 2px solid #eee;
-            padding-top: 20px;
+            border-top: 1px solid #e0d9cd;
+            padding-top: 25px;
         }
         .artwork {
-            background: #f9f9f9;
-            border: 1px solid #eee;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 5px;
+            background: #fdfcf9; /* Coincide con el fondo del body */
+            border: 1px solid #e0d9cd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
             overflow: hidden;
         }
         .artwork h3 {
             margin-top: 0;
-            color: #007bff;
-            font-size: 1.2em;
-            margin-left: 115px;
+            color: #7b5e48; /* Un marrón más oscuro para el título de la obra */
+            font-size: 1.3em;
+            margin-left: 120px; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
         .artwork .placeholder-image {
             width: 100px;
             height: 100px;
-            background-color: #e0e0e0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #777;
-            font-size: 0.8em;
-            text-align: center;
+            background-color: #eae5de;
             float: left;
-            margin-right: 15px;
+            margin-right: 20px;
             border-radius: 4px;
-            border: 1px solid #ddd;
+            border: 1px solid #d4c8b0;
+            overflow: hidden;
+        }
+        .artwork .placeholder-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
         }
         .artwork p {
-            margin-bottom: 5px;
-            font-size: 0.95em;
-            margin-left: 115px;
+            margin-bottom: 8px;
+            font-size: 1em;
+            margin-left: 120px; 
+            color: #4a4a4a;
         }
-        .loading-message, .info-message {
-            color: #0056b3;
+        .loading-message, .info-message, .warning-message {
+            color: #5c5241;
             font-style: italic;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            padding: 12px;
+            border-radius: 4px;
+            background-color: #f0ebe5;
+        }
+        .warning-message {
+            color: #721c24; 
+            background-color: #f8d7da; 
+            border: 1px solid #f5c6cb; 
+            font-weight: bold;
         }
         .wikipedia-extract {
-            font-size: 0.9em;
+            font-size: 0.95em;
             color: #555;
-            border-left: 3px solid #007bff;
-            padding-left: 10px;
-            margin: 10px 0;
-            background-color: #f8f9fa;
+            border-left: 3px solid #bcae9a;
+            padding-left: 15px;
+            margin: 15px 0;
+            background-color: #f7f4ef;
             border-radius: 4px;
-        }
-        .history-section {
-            margin-top: 20px;
-            text-align: right;
         }
     </style>
 </head>
 <body>
 
     <div class="readme-content">
-        <!-- ... (Contenido del README como en la versión anterior) ... -->
         <h1>🎨 Explorador de Legados Artísticos: ¿Y si...?™️</h1>
-        <img src="https://via.placeholder.com/800x200.png?text=Explorador+de+Legados+Art%C3%ADsticos" alt="Banner Artístico" class="banner-image">
-        <p><em>(Reemplaza la URL de arriba con un banner más temático si lo deseas)</em></p>
+        <img src="https://picsum.photos/seed/artbanner/800/200" alt="Banner Artístico Conceptual" class="banner-image">
         <hr>
-
         <h2>✨ Introducción</h2>
-        <p>¡Bienvenido al <strong>Explorador de Legados Artísticos: ¿Y si...?™️</strong>! ¿Alguna vez te has preguntado qué obras maestras nos habríamos perdido si tus artistas favoritos hubieran seguido creando? ¿Qué caminos inexplorados podrían haber recorrido? Esta aplicación web te invita a un viaje fascinante a través de la imaginación, visualizando las posibles creaciones futuras de artistas icónicos si su viaje creativo no se hubiera interrumpido. ¡Prepárate para sorprenderte y redescubrir el arte como nunca antes!</p>
+        <p>Bienvenido al <strong>Explorador de Legados Artísticos: ¿Y si...?™️</strong>. Sumérgete en un ejercicio de imaginación donde visualizamos las posibles creaciones futuras de artistas icónicos. Esta aplicación utiliza descripciones enriquecidas y conceptuales para evocar estas obras hipotéticas.</p>
         <hr>
-
         <h2>🚀 Descripción del Proyecto</h2>
-        <p>El <strong>Explorador de Legados Artísticos</strong> es una innovadora aplicación web que utiliza un motor de inferencia creativa (conceptual y simulado para este ejemplo) para especular sobre la evolución artística de figuras históricas. Simplemente ingresa el nombre de un artista y la aplicación te presentará una galería hipotética de obras que podría haber creado. Para artistas predefinidos, se usa información curada. Para otros, se intenta una búsqueda básica en Wikipedia para inspirar una generación simulada. Adicionalmente, puedes descargar un historial de tus búsquedas durante la sesión actual.</p>
-        <p><strong>Objetivo principal:</strong> Encender la curiosidad, fomentar la apreciación artística y ofrecer una nueva perspectiva sobre el legado de los grandes maestros.</p>
-        <p><small><strong>Nota Importante:</strong> La consulta a Wikipedia es una simplificación y no reemplaza un análisis profundo. La generación para artistas no predefinidos sigue siendo una simulación conceptual y no utiliza IA real. Una versión completa requeriría un backend y acceso a APIs de información y modelos de IA más robustos.</small></p>
-        <hr>
-
-        <h2>🌟 Ventajas y Motivación: ¿Por qué usar esta maravilla?</h2>
+        <p>Esta aplicación simula la evolución artística de figuras históricas. Al ingresar un nombre, se presenta una galería hipotética. Para artistas predefinidos, la información es curada. Para otros, una búsqueda en Wikipedia inspira descripciones simuladas que aspiran a una mayor riqueza evocadora, como si fueran el germen de una obra de arte visual.</p>
+        
+        <p><strong style="color: #721c24;">Nota Fundamental sobre Imágenes y Descripciones Avanzadas:</strong></p>
         <ul>
-            <li><strong>🤯 Desata tu Imaginación:</strong> Visualiza lo imposible y explora universos artísticos alternativos.</li>
-            <li><strong>🎓 Aprende Jugando:</strong> Descubre nuevas facetas de artistas (tanto los predefinidos como aquellos sobre los que se consulta Wikipedia) y reflexiona sobre su posible evolución estilística, incluso con información simulada.</li>
-            <li><strong>💡 Fuente de Inspiración:</strong> ¿Eres artista o creador? ¡Deja que estas visiones hipotéticas inspiren tus propias obras!</li>
-            <li><strong>💬 Inicia Conversaciones Apasionantes:</strong> Comparte tus descubrimientos y debate sobre el arte y el potencial creativo.</li>
-            <li><strong>💖 Pura Diversión y Curiosidad:</strong> Satisface esa pregunta que todos nos hemos hecho: "¿Qué habría pasado si...?"</li>
-            <li><strong>📝 Guarda tu Viaje Creativo:</strong> Descarga un historial de los artistas que has explorado durante tu sesión.</li>
-            <li><strong>🌐 Acceso Universal:</strong> ¡Totalmente gratuito y accesible desde cualquier navegador web moderno! Sin instalaciones complicadas.</li>
+            <li>Las <strong>imágenes</strong> que se muestran son marcadores de posición visuales (de Picsum Photos) y <strong>NO son generadas por IA a partir de las descripciones</strong>. Sirven como una mera ilustración conceptual.</li>
+            <li>La solicitud de generar descripciones al estilo de Marcel Proust mediante IA o de crear imágenes artísticas directamente por IA <strong>no puede implementarse en esta versión de la aplicación</strong>. Estas tareas requieren complejos sistemas de backend y acceso a modelos de IA avanzados, lo cual está fuera del alcance de una aplicación que funciona enteramente en el navegador.</li>
+            <li>Las descripciones para artistas no predefinidos son una <strong>simulación enriquecida</strong> que intenta ser más detallada y evocadora, pero no son producto de una IA de generación de texto sofisticada.</li>
         </ul>
-        <hr>
-
-        <h2>💻 Requisitos</h2>
-        <p>Para disfrutar del <strong>Explorador de Legados Artísticos</strong>, solo necesitas:</p>
-        <ol>
-            <li>Un <strong>navegador web moderno</strong> (como Google Chrome, Mozilla Firefox, Safari, Microsoft Edge).</li>
-            <li>Conexión a Internet (para la función de consulta a Wikipedia).</li>
-            <li>¡Una pizca de <strong>curiosidad</strong> y ganas de explorar!</li>
-        </ol>
-        <p>¡Eso es todo! No necesitas instalar software adicional ni tener conocimientos técnicos avanzados.</p>
-        <hr>
-
-        <h2>🛠️ Uso: ¡Manos a la obra!</h2>
-        <p>Usar el Explorador es tan sencillo como un trazo de pincel:</p>
-        <ol>
-            <li>
-                <p><strong>Guarda este archivo:</strong></p>
-                <ul>
-                    <li>Si estás viendo este código en un editor, guárdalo como un archivo con extensión <code>.html</code> (por ejemplo, <code>explorador_legados_v3.html</code>) en tu ordenador.</li>
-                </ul>
-            </li>
-            <li>
-                <p><strong>Abre el archivo en tu navegador:</strong></p>
-                <ul>
-                    <li>Busca el archivo <code>.html</code> que acabas de guardar.</li>
-                    <li>Haz doble clic sobre él, o arrástralo y suéltalo en una ventana abierta de tu navegador web.</li>
-                </ul>
-            </li>
-            <li>
-                <p><strong>¡Explora la aplicación de abajo!</strong></p>
-                <ul>
-                    <li>La aplicación interactiva se encuentra más abajo en esta misma página.</li>
-                    <li>Escribe el nombre de un artista en el campo de texto (ej: "Leonardo da Vinci", "Vincent van Gogh", "Frida Kahlo", o prueba con "Pablo Picasso" o "Salvador Dalí" para ver la consulta a Wikipedia).</li>
-                    <li>Pulsa el botón "<strong>Generar Legado Hipotético</strong>".</li>
-                    <li>Si deseas guardar un registro de los artistas que has explorado, pulsa "<strong>Descargar Historial</strong>" al final de tu sesión.</li>
-                    <li>¡Maravíllate con las "nuevas" obras que la aplicación sugiere!</li>
-                </ul>
-            </li>
-        </ol>
         <hr>
          <h2>💡 Aplicación Práctica: ¡Pruébala Aquí!</h2>
     </div>
 
-
     <div class="app-container">
-        <h1><span class="emoji-title">🎨</span> Explorador de Legados Artísticos: ¿Y si...?™️</h1>
-        <p class="subtitle">Descubre las obras que tus artistas favoritos podrían haber creado.</p>
+        <h1><span class="emoji-title">🖼️</span> Explorador de Legados Artísticos</h1>
+        <p class="subtitle">Imagina las obras que tus artistas favoritos podrían haber concebido.</p>
+        <p class="warning-message" id="aiDisclaimer" style="text-align: left; font-size: 0.9em;">
+            <strong>Aviso Importante:</strong> Las imágenes son marcadores visuales conceptuales (no generadas por IA). Las descripciones de artistas no predefinidos son simulaciones enriquecidas que intentan evocar un estilo detallado, pero no son creadas por una IA de generación de texto avanzada ni imitan un estilo literario específico como el de Proust.
+        </p>
 
         <label for="artistName">Nombre del Artista:</label>
-        <input type="text" id="artistName" placeholder="Ej: Vincent van Gogh, Pablo Picasso">
+        <input type="text" id="artistName" placeholder="Ej: Vincent van Gogh, Remedios Varo, o prueba con un artista nuevo">
 
         <button onclick="generateLegacy()">Generar Legado Hipotético</button>
         <button onclick="downloadHistory()" class="secondary" id="downloadHistoryBtn" disabled>Descargar Historial</button>
-
 
         <div id="results">
             <!-- Los resultados se mostrarán aquí -->
@@ -273,116 +241,287 @@
     </div>
 
     <script>
-        let searchHistory = []; // Array para almacenar el historial de búsqueda de la sesión
+        let searchHistory = []; 
 
+        // (Las descripciones de hypotheticalWorksDB se mantienen como estaban, ya que son curadas)
+        // ... (hypotheticalWorksDB se mantiene igual que en la versión anterior) ...
         const hypotheticalWorksDB = {
-            "vincent van gogh": [
-                { title: "Noche Estrellada sobre Tokio", year: "1895 (Hipotético)", description: "Una visión postimpresionista del emergente paisaje urbano de Tokio...", imagePlaceholder: "Cielo / Ciudad" },
-                { title: "Retratos del Alma Digital", year: "1900 (Hipotético)", description: "Explorando la conexión humana en la era pre-digital...", imagePlaceholder: "Retrato / Abstracto" }
+             "vincent van gogh": [
+                { 
+                    title: "Noche Estrellada sobre Tokio", 
+                    year: "1895 (Hipotético)", 
+                    description: "Una visión postimpresionista del emergente paisaje urbano de Tokio, donde Van Gogh, fascinado por la estética japonesa que tanto admiró, captura la vibrante energía nocturna. Sus característicos remolinos celestes se fusionarían con el brillo de innumerables farolillos de papel y las primeras luces eléctricas de la metrópoli. La obra transmitiría una melancolía luminosa, un encuentro conmovedor entre la tradición ancestral y la modernidad incipiente que se abría paso.", 
+                    imageUrl: "https://picsum.photos/seed/vg_tokyo_stars/600/400"
+                },
+                { 
+                    title: "Retratos del Alma Digital", 
+                    year: "1900 (Hipotético)", 
+                    description: "Explorando la conexión humana en el umbral de una nueva era, Van Gogh se anticiparía conceptualmente a la fragmentación de la identidad. Utilizaría una técnica de pinceladas segmentadas y vibrantes para sugerir la complejidad del mundo interior, casi como si pintara los 'píxeles' del espíritu. Estos retratos buscarían capturar la esencia fluctuante del ser en un mundo cada vez más interconectado pero paradójicamente aislado.", 
+                    imageUrl: "https://picsum.photos/seed/vg_digital_soul/600/400" 
+                },
+                {
+                    title: "Los Girasoles Cósmicos",
+                    year: "1897 (Hipotético)",
+                    description: "Llevando su obsesión por los girasoles a una nueva dimensión trascendental, esta serie los representaría no bajo el sol terrenal, sino bañados por la luz etérea de nebulosas y galaxias distantes descubiertas por la astronomía de su tiempo. Cada flor sería un microcosmos radiante, simbolizando la vida eterna, la energía creativa inagotable del universo y la interconexión de todo lo existente, pintados con empastes aún más gruesos y colores iridiscentes que desafiarían la paleta convencional.",
+                    imageUrl: "https://picsum.photos/seed/vg_cosmic_sunflowers/600/400"
+                },
+                {
+                    title: "El Sembrador Bajo la Aurora Boreal",
+                    year: "1898 (Hipotético)",
+                    description: "Retomando uno de sus temas más queridos y simbólicos, el sembrador, pero esta vez la figura solitaria y resiliente no trabajaría bajo el sol provenzal, sino bajo el espectáculo sobrecogedor y mágico de una aurora boreal. La obra exploraría la profunda humildad del ser humano frente a la majestuosidad de la naturaleza, pero también su persistencia indomable y su conexión intrínseca con los ciclos vitales. Verdes, azules y violetas eléctricos dominarían el cielo en un contraste dramático con los tonos terrosos y humildes del campo arado.",
+                    imageUrl: "https://picsum.photos/seed/vg_sower_aurora/600/400"
+                },
+                {
+                    title: "Autorretrato con el Universo en los Ojos",
+                    year: "1902 (Hipotético)",
+                    description: "Un autorretrato tardío, casi testamentario, donde la mirada penetrante e inolvidable de Van Gogh no solo reflejaría su tormento interior y su búsqueda incesante, sino también una profunda y serena comprensión del universo. Sus ojos serían dos vórtices estrellados, ventanas a la inmensidad, y el fondo se disolvería en una abstracción cósmica de colores puros, sugiriendo su trascendencia final y la fusión de su ser con la infinitud del espacio y el tiempo.",
+                    imageUrl: "https://picsum.photos/seed/vg_self_universe_eyes/600/400"
+                }
             ],
             "leonardo da vinci": [
-                { title: "El Ingeniero Celestial", year: "1525 (Hipotético)", description: "Diseños detallados de máquinas voladoras interplanetarias...", imagePlaceholder: "Máquina / Espacio" },
-                { title: "Anatomía del Movimiento Cuántico", year: "1530 (Hipotético)", description: "Estudios pioneros sobre la naturaleza fundamental de la materia...", imagePlaceholder: "Diagrama / Partículas" }
+                { 
+                    title: "El Ingeniero Celestial: Atlas de Mundos Habitables", 
+                    year: "1525 (Hipotético)", 
+                    description: "Diseños meticulosos y visionarios de máquinas voladoras interplanetarias, acompañados de mapas estelares precisos basados en sus propias observaciones mejoradas y audaces especulaciones. Incluiría estudios anatómicos comparativos de posibles formas de vida extraterrestre, imaginadas con una lógica biológica impecable. Leonardo aplicaría su riguroso método científico y su imaginación desbordante para especular sobre la cosmografía y la biología más allá de la Tierra, con todas sus anotaciones en su característica escritura especular, llenas de preguntas y exploraciones.", 
+                    imageUrl: "https://picsum.photos/seed/ldv_celestial_engineer/600/400"
+                },
+                { 
+                    title: "Anatomía del Movimiento Cuántico y la Luz Primordial", 
+                    year: "1530 (Hipotético)", 
+                    description: "Estudios pioneros que irían más allá de la óptica clásica, adentrándose en la naturaleza fundamental de la materia y la luz. A través de intrincados diagramas, experimentos mentales ingeniosos y la construcción de nuevos instrumentos de observación, Leonardo exploraría conceptos que hoy resuenan con la dualidad onda-partícula y la interconexión universal. Su objetivo sería desvelar la 'luz primordial', la esencia misma de la creación, anticipando debates de la física moderna con una visión renacentista holística.", 
+                    imageUrl: "https://picsum.photos/seed/ldv_quantum_anatomy/600/400"
+                },
+                {
+                    title: "La Última Cena en el Multiverso de Posibilidades",
+                    year: "1528 (Hipotético)",
+                    description: "Reinterpretando su monumental obra maestra, Leonardo exploraría la entonces herética idea de realidades paralelas o posibilidades divergentes. Cada apóstol podría ser representado en múltiples estados superpuestos, sus gestos y emociones ramificándose en diferentes futuros posibles basados en sus elecciones y caracteres. La composición mantendría su equilibrio armónico y su profundidad psicológica, pero con un dinamismo conceptual que desafiaría la percepción lineal del tiempo y el espacio, invitando a una meditación sobre el destino y el libre albedrío.",
+                    imageUrl: "https://picsum.photos/seed/ldv_multiverse_supper/600/400"
+                },
+                {
+                    title: "Tratado sobre la Ciudad Flotante Autosuficiente 'Armonia Caelestis'",
+                    year: "1535 (Hipotético)",
+                    description: "Un compendio exhaustivo de ingeniería, arquitectura y urbanismo visionario. Detallaría el diseño completo de una ciudad levitante, 'Armonia Caelestis', impulsada por una combinación ingeniosa de energías renovables (solar concentrada, eólica de gran altitud, hidráulica por recoleión de nubes) y con sistemas ecológicos perfectamente integrados para la producción de alimentos en jardines verticales, el reciclaje total de residuos y la purificación del aire y agua. Sería un testimonio de su genio para resolver problemas complejos con soluciones elegantes, bellas y sostenibles.",
+                    imageUrl: "https://picsum.photos/seed/ldv_floating_city/600/400"
+                },
+                {
+                    title: "El Hombre de Vitruvio Cósmico: Proporciones del Ser en la Danza Universal",
+                    year: "1532 (Hipotético)",
+                    description: "Una profunda evolución de su icónico Hombre de Vitruvio. Esta vez, la figura humana, en su perfecta proporción, se inscribiría no solo en el círculo y el cuadrado terrestres, sino también en relación con las proporciones áureas observadas en las galaxias espirales, las órbitas planetarias y las estructuras cristalinas fundamentales. Sería una meditación filosófica y científica sobre el lugar del ser humano como microcosmos que refleja y participa activamente en el macrocosmos, una 'danza universal' de forma y energía.",
+                    imageUrl: "https://picsum.photos/seed/ldv_cosmic_vitruvian/600/400"
+                }
             ],
             "frida kahlo": [
-                { title: "Autorretrato con Realidad Aumentada", year: "1960 (Hipotético)", description: "Una introspección sobre la identidad y la percepción...", imagePlaceholder: "Autorretrato / Digital" },
-                { title: "El Jardín de las Mariposas Biónicas", year: "1965 (Hipotético)", description: "Una surrealista fusión de naturaleza y tecnología...", imagePlaceholder: "Naturaleza / Robots" }
+                { 
+                    title: "Autorretrato con Realidad Aumentada y Corazón Resiliente", 
+                    year: "1960 (Hipotético)", 
+                    description: "Una introspección audaz sobre la identidad, el dolor crónico transformado y la percepción alterada por la tecnología. Frida se pinta con implantes biomecánicos estilizados que no solo alivian su sufrimiento físico, sino que también proyectan capas de su vibrante mundo interior —símbolos de su herencia mexicana, recuerdos agridulces, sueños lúcidos— como hologramas etéreos que interactúan con su entorno físico. Su corazón, aunque visiblemente herido, se muestra meticulosamente reconstruido con hilos de oro y fragmentos de obsidiana, al estilo kintsugi, celebrando la belleza de la reparación y la fortaleza indomable.", 
+                    imageUrl: "https://picsum.photos/seed/fk_ar_selfportrait/600/400"
+                },
+                { 
+                    title: "El Jardín de las Mariposas Biónicas y la Flora Sintiente", 
+                    year: "1965 (Hipotético)", 
+                    description: "Una surrealista y exuberante fusión de naturaleza y tecnología donde su amado jardín de la Casa Azul se transforma en un ecosistema híbrido. Las plantas exóticas exhiben circuitos luminosos que pulsan con vida propia y las mariposas, símbolos de transformación, tienen alas mecánicas intrincadas hechas de filigrana de plata y plumas iridiscentes. Sería una reflexión profunda sobre la supervivencia, la adaptación forzada y la coexistencia a veces dolorosa, a veces simbiótica, de lo orgánico y lo artificial en un mundo que ella siempre sintió en constante cambio y amenaza.", 
+                    imageUrl: "https://picsum.photos/seed/fk_bionic_butterflies/600/400"
+                },
+                {
+                    title: "Mis Ancestros y Mis Descendientes Cuánticos en el Árbol de la Vida",
+                    year: "1968 (Hipotético)",
+                    description: "Un complejo y expansivo árbol genealógico que se extiende no solo a su pasado conocido, sino también a un futuro especulativo y multilineal. Frida se sitúa en el centro, como un poderoso nexo, conectada por hilos de luz sangrante a figuras arquetípicas de sus antepasados indígenas y europeos, y a posibles descendientes o legados espirituales que existen en múltiples líneas temporales o dimensiones paralelas. La obra exploraría la herencia como carga y como fuerza, la identidad transgeneracional y la naturaleza no lineal y entrelazada del tiempo y el parentesco.",
+                    imageUrl: "https://picsum.photos/seed/fk_quantum_ancestors/600/400"
+                },
+                {
+                    title: "La Columna Rota y Reconstruida con Luz Estelar y Raíces de Obsidiana",
+                    year: "1970 (Hipotético)",
+                    description: "Una poderosa y triunfante reimaginación de su icónica y desgarradora obra 'La Columna Rota'. En esta versión, la columna jónica fragmentada no es solo un símbolo de dolor, sino que es activamente reemplazada o entrelazada con una estructura hecha de pura luz estelar solidificada o energía cósmica vibrante, anclada a la tierra por profundas raíces de obsidiana. Su cuerpo, aunque aún muestra las cicatrices como medallas de honor, irradia una nueva fortaleza, una sanación trascendental y una conexión directa con las fuerzas primordiales del universo.",
+                    imageUrl: "https://picsum.photos/seed/fk_rebuilt_column/600/400"
+                },
+                {
+                    title: "Diego y Yo en el Metaverso de los Recuerdos Compartidos y Disputados",
+                    year: "1972 (Hipotético)",
+                    description: "Explorando su tumultuosa e inseparable relación con Diego Rivera, Frida se pinta junto a él, no en un entorno físico terrenal, sino dentro de un paisaje digital o etéreo construido a partir de sus recuerdos compartidos, sus sueños recurrentes, sus dolorosas traiciones y sus éxtasis creativos. Sería una obra conceptualmente interactiva, donde diferentes facetas de su relación se superponen, se contradicen y se transforman, reflejando la complejidad, la imposibilidad de separación y la persistencia de su vínculo más allá de la vida y la muerte.",
+                    imageUrl: "https://picsum.photos/seed/fk_metaverse_diego/600/400"
+                }
             ],
              "remedios varo": [
-                { title: "El Alquimista de los Sueños Cósmicos", year: "1970 (Hipotético)", description: "Varo representa laboratorios etéreos donde se destilan constelaciones...", imagePlaceholder: "Alquimia / Cosmos" },
-                { title: "Sinfonía Mecánica de la Naturaleza Oculta", year: "1975 (Hipotético)", description: "Intrincados autómatas inspirados en flora y fauna...", imagePlaceholder: "Autómata / Naturaleza" }
+                { 
+                    title: "El Alquimista de los Sueños Cósmicos y la Música Silenciosa de las Esferas", 
+                    year: "1970 (Hipotético)", 
+                    description: "Varo representa laboratorios etéreos y torres aisladas donde personajes andróginos, eruditos y místicos, no solo destilan constelaciones en matraces de cristal lunar, sino que también transcriben la música inaudible de las esferas celestes en partituras complejas utilizando instrumentos de su propia invención. La obra estaría repleta de intrincados aparatos científicos, astrológicos y musicales, fusionando la alquimia, la astronomía pitagórica y la composición musical en una búsqueda obsesiva de armonía universal, conocimiento oculto y la clave de la transmutación espiritual.", 
+                    imageUrl: "https://picsum.photos/seed/rv_cosmic_alchemist/600/400"
+                },
+                { 
+                    title: "Sinfonía Mecánica de la Naturaleza Oculta y sus Guardianes Etereos", 
+                    year: "1975 (Hipotético)", 
+                    description: "Intrincados y delicados autómatas inspirados en la flora, la fauna y los fenómenos naturales, no como meras máquinas, sino como seres sensibles, casi conscientes, que actúan como guardianes de los secretos más profundos de la naturaleza. Estos seres mecánicos, construidos con metales preciosos, engranajes de relojería, gemas luminiscentes y plumas de aves exóticas, interactuarían en paisajes oníricos y arquitecturas imposibles, revelando las leyes invisibles y la inteligencia sutil que rigen el mundo natural.", 
+                    imageUrl: "https://picsum.photos/seed/rv_mechanical_symphony/600/400"
+                },
+                {
+                    title: "La Tejedora de Destinos Multidimensionales en el Telar del Tiempo",
+                    year: "1978 (Hipotético)",
+                    description: "Una figura femenina central, serena y concentrada, quizás un autorretrato idealizado como una Parca benévola, se sienta ante un monumental telar cósmico. No teje con hilos ordinarios, sino con haces de luz de estrellas, filamentos de nebulosas, corrientes de tiempo y las propias hebras de la casualidad y la causalidad. Cada hilo representa un posible destino, una realidad alternativa o una elección crucial. La obra exploraría el libre albedrío frente al destino, la interconexión de todas las existencias y la capacidad de co-crear la propia realidad con sabiduría y precisión.",
+                    imageUrl: "https://picsum.photos/seed/rv_destiny_weaver/600/400"
+                },
+                {
+                    title: "El Arquitecto de Ciudades Oníricas Flotantes y Refugios del Espíritu",
+                    year: "1980 (Hipotético)",
+                    description: "Varo, como arquitecta de lo imposible, diseñaría y pintaría planos detallados y vistas panorámicas de ciudades etéreas que flotan entre las nubes, en dimensiones paralelas o dentro de geodas gigantes. Estas ciudades estarían construidas con materiales extraños como el cristal de luna, el éter solidificado o la madera de árboles soñadores, siguiendo una lógica arquitectónica basada en los sueños lúcidos, la geometría sagrada y las necesidades del alma. Serían lugares de refugio para almas creativas, científicos heterodoxos y exploradores de lo desconocido, llenos de bibliotecas arcanas, observatorios estelares y jardines silenciosos.",
+                    imageUrl: "https://picsum.photos/seed/rv_dream_architect/600/400"
+                },
+                {
+                    title: "Viaje Interior a través del Árbol de la Vida Cabalístico y sus Moradas Secretas",
+                    year: "1983 (Hipotético)",
+                    description: "Una representación visual extraordinariamente detallada y simbólica de un viaje iniciático a través de las diez Sephiroth y los veintidós senderos del Árbol de la Vida Cabalístico. Cada esfera sería un paisaje surrealista y autónomo, poblado por seres enigmáticos, vehículos extraños y objetos simbólicos que representan las cualidades, desafíos y revelaciones de cada etapa del camino espiritual. La obra sería una meditación profunda sobre el autoconocimiento, la transformación interior, la ascensión mística y la búsqueda de la reintegración con lo Divino, rica en simbolismo esotérico y detalles que invitan a una contemplación prolongada.",
+                    imageUrl: "https://picsum.photos/seed/rv_kabbalah_journey/600/400"
+                }
             ]
         };
 
-        const simulatedArtStyles = ["Expresionismo Cósmico", "Realismo Metafísico Digital", "Surrealismo Cuántico", "Neo-Simbolismo Algorítmico", "Constructivismo Etéreo"];
-        const simulatedThemes = ["la naturaleza de la conciencia", "los ecos del pasado en el futuro", "la simbiosis entre humanidad y tecnología avanzada", "realidades fracturadas y sueños lúcidos", "la arquitectura invisible del universo"];
-        const simulatedTechniques = ["empleando nano-pigmentos auto-iluminados", "con una claridad hiperrealista que desafía la percepción", "utilizando algoritmos generativos para las texturas base", "integrando bio-arte con elementos cinéticos", "con una paleta cromática extraída de nebulosas distantes"];
-        const simulatedImagePlaceholders = ["Cosmos / Mente", "Hiperreal / IA", "Sueño / Algoritmo", "Bio / Cinético", "Nebulosa / Forma"];
+        // --- Contenido para Simulación Enriquecida (Inspiración Proustiana Lejana) ---
+        const literaryIntros = [
+            "Se diría que el lienzo exhala un aliento propio, donde {artist_lastName} parece haber destilado la esencia misma de...",
+            "Ante nuestros ojos se despliega una escena que, más que una representación, se siente como una confidencia susurrada por el tiempo, una visión donde {artist_lastName}...",
+            "La composición nos sumerge en una atmósfera palpable, un instante suspendido donde {artist_lastName} sondea las profundidades de...",
+            "Como si emergiera de un recuerdo recobrado, esta obra de {artist_lastName} nos confronta con la elusiva naturaleza de...",
+            "El artista, {artist_lastName}, nos invita a un peregrinaje visual hacia el corazón de {core_theme}, donde cada detalle es una inflexión del alma."
+        ];
+
+        const sensoryDetails = [
+            "una luz crepuscular que baña los contornos con un halo de melancolía dorada.",
+            "texturas que ruegan ser exploradas no solo con la vista, sino con el recuerdo de un tacto olvidado.",
+            "colores que vibran con una intensidad soterrada, como emociones contenidas a punto de revelarse.",
+            "un silencio elocuente, apenas perturbado por el eco de un sonido que solo la imaginación puede completar.",
+            "sombras que se alargan, densas y aterciopeladas, ocultando tanto como revelan del misterio central.",
+            "una pátina de tiempo que parece adherida a la superficie, otorgándole la dignidad de lo perdurable.",
+            "un juego de transparencias y veladuras que sugiere múltiples realidades superpuestas, como hojas de un libro antiguo.",
+            "el aire mismo parece adquirir una cualidad tangible, denso con las partículas de un momento irrecuperable."
+        ];
+
+        const introspectiveReflections = [
+            "La obra parece interrogar la fugacidad de la memoria y la persistencia de ciertas impresiones sensoriales.",
+            "Invita a una meditación sobre la soledad inherente a la percepción individual, ese jardín secreto del yo.",
+            "Sugiere que la belleza más profunda a menudo reside en lo imperfecto, en la huella que el tiempo y la experiencia dejan sobre las cosas.",
+            "Nos confronta con la tensión entre lo efímero del instante y el anhelo humano de trascendencia.",
+            "Es un espejo donde se reflejan no solo formas y colores, sino también los ecos de nuestras propias vivencias y anhelos.",
+            "Plantea la cuestión de si el arte puede, de hecho, detener el flujo incesante del tiempo, encapsulando un fragmento de eternidad.",
+            "Se percibe una nostalgia por un algo indefinible, quizás un paraíso perdido o una armonía anhelada."
+        ];
+        
+        const coreArtisticConcepts = { // Mantiene algunos de los temas anteriores pero con un giro más conceptual
+            identity: ["la insondable complejidad del yo, sus múltiples facetas y sus máscaras sociales", "el fluir de la conciencia y la arquitectura laberíntica de la memoria"],
+            perception: ["la subjetividad radical de la experiencia sensorial y cómo moldea nuestra realidad", "el umbral entre lo visible y lo invisible, lo dicho y lo indecible"],
+            time: ["la relatividad del tiempo vivido, su dilatación y contracción en la experiencia humana", "la persistencia del pasado en el presente, como un eco que resuena en el ahora"],
+            artNature: ["la propia naturaleza del arte como un intento de aprehender lo inefable", "la obra como un microcosmos que refleja, deforma o transfigura el mundo"],
+            default: ["la búsqueda de significado en un universo indiferente pero asombrosamente bello", "la melancolía inherente a la belleza efímera y la condición mortal"]
+        };
+
 
         function getRandomElement(arr) {
             return arr[Math.floor(Math.random() * arr.length)];
         }
+        
+        function getKeywordsFromExtract(text) { // Misma función que antes
+            const keywords = [];
+            if (!text) return keywords;
+            const lowerText = text.toLowerCase();
+            if (lowerText.includes("pintura") || lowerText.includes("óleo") || lowerText.includes("lienzo")) keywords.push("painting");
+            if (lowerText.includes("escultura") || lowerText.includes("mármol") || lowerText.includes("bronce")) keywords.push("sculpture");
+            if (lowerText.includes("surrealis") || lowerText.includes("oníric")) keywords.push("surrealism");
+            if (lowerText.includes("abstra")) keywords.push("abstract");
+            if (lowerText.includes("retrato")) keywords.push("portrait");
+            if (lowerText.includes("paisaje") || lowerText.includes("naturaleza")) keywords.push("landscape");
+            return keywords;
+        }
 
-        async function fetchWikipediaInfo(artistName) {
+        async function fetchWikipediaInfo(artistName) { // Misma función que antes
             const endpoint = `https://es.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro=true&explaintext=true&redirects=true&titles=${encodeURIComponent(artistName)}&origin=*`;
             try {
                 const response = await fetch(endpoint);
-                if (!response.ok) {
-                    throw new Error(`Error de red: ${response.status}`);
-                }
+                if (!response.ok) throw new Error(`Error de red: ${response.status}`);
                 const data = await response.json();
                 const pages = data.query.pages;
-                const pageId = Object.keys(pages)[0]; 
-                
+                const pageId = Object.keys(pages)[0];
                 if (pageId && pages[pageId] && pages[pageId].extract && !pages[pageId].missing) {
                     let extract = pages[pageId].extract;
-                    if (extract.length > 300) {
-                        extract = extract.substring(0, 300) + "... (sigue en Wikipedia)";
+                    if (extract.length > 400) { // Un poco más de extracto puede ser útil
+                        extract = extract.substring(0, 400);
+                        extract = extract.substring(0, Math.max(extract.lastIndexOf(" "), extract.lastIndexOf("."), extract.lastIndexOf(","))) + "... (sigue en Wikipedia)";
                     }
                     return extract;
-                } else {
-                    return null; 
                 }
+                return null;
             } catch (error) {
                 console.error("Error al buscar en Wikipedia:", error);
-                return null; 
+                return null;
             }
         }
 
         function simulateWorksBasedOnInfo(artistFullName, wikipediaExtract) {
             const works = [];
             const currentYear = new Date().getFullYear();
+            const artistKeywords = getKeywordsFromExtract(wikipediaExtract);
+            
+            const nameParts = artistFullName.split(" ");
+            const lastName = nameParts.length > 1 ? nameParts[nameParts.length - 1] : artistFullName;
 
-            for (let i = 0; i < 2; i++) {
-                let style = getRandomElement(simulatedArtStyles);
-                let theme = getRandomElement(simulatedThemes);
-                let technique = getRandomElement(simulatedTechniques);
-                const placeholder = getRandomElement(simulatedImagePlaceholders);
-                const nameParts = artistFullName.split(" ");
-                const lastName = nameParts.length > 1 ? nameParts[nameParts.length - 1] : artistFullName;
+            for (let i = 0; i < 5; i++) {
+                let intro = getRandomElement(literaryIntros)
+                                .replace("{artist_lastName}", lastName)
+                                .replace("{core_theme}", getRandomElement(Object.values(coreArtisticConcepts).flat()));
+
+                let sensory = getRandomElement(sensoryDetails);
+                if (Math.random() > 0.4) sensory += " " + getRandomElement(sensoryDetails); // A veces dos detalles sensoriales
+
+                let reflection = getRandomElement(introspectiveReflections);
                 
-                let title = `${style.split(" ")[0]} de ${lastName}: Exploración #${i + 1}`;
-                let description = `Continuando su legado, ${artistFullName} podría haber creado "${title}". `;
+                let themeKeyword = "default";
+                if(artistKeywords.includes("portrait")) themeKeyword = "identity";
+                else if(artistKeywords.includes("landscape")) themeKeyword = "perception"; // O artNature
+                else if(artistKeywords.includes("surrealism") || artistKeywords.includes("abstract")) themeKeyword = "artNature";
 
-                if (wikipediaExtract) {
-                    if (wikipediaExtract.toLowerCase().includes("pintura") || wikipediaExtract.toLowerCase().includes("óleo")) {
-                        theme = "la evolución de la pintura tradicional en la era digital";
-                        technique = "combinando técnicas clásicas con proyecciones holográficas";
-                    } else if (wikipediaExtract.toLowerCase().includes("escultura")) {
-                        theme = "la forma tridimensional en el espacio-tiempo alterado";
-                        style = "Escultura Bio-Kinética";
-                        title = `Forma Fluida de ${lastName} #${i+1}`;
-                    }
-                    description += `Influenciado por sus exploraciones previas (sugeridas por su biografía), esta pieza ahondaría en ${theme}. `;
-                } else {
-                    description += `Esta obra especulativa se adentraría en ${theme}. `;
+                let coreConcept = getRandomElement(coreArtisticConcepts[themeKeyword] || coreArtisticConcepts.default);
+
+                // Construcción de la descripción
+                let description = `${intro} ${coreConcept}. `;
+                description += `Se percibe ${sensory}. `;
+                description += `Quizás, la obra ${reflection.toLowerCase().startsWith("la obra") ? reflection.substring(8) : reflection} `;
+                
+                if(wikipediaExtract && i < 2 && artistKeywords.length > 0){ // Incorporar algo de Wikipedia si existe
+                    const knownElement = getRandomElement(artistKeywords);
+                    description += `Esta exploración parece resonar con el conocido interés de ${lastName} por ${knownElement}, aquí transfigurado en una nueva meditación visual. `
                 }
-                
-                description += `Se caracterizaría por ${technique}, marcando un nuevo hito en su búsqueda de ${style.toLowerCase()}.`;
-                const hypotheticalYear = currentYear + 10 + Math.floor(Math.random() * 30) * (i + 1);
+
+                description += `Así, ${lastName} nos legaría una pieza que no busca respuestas definitivas, sino que abre un espacio para la contemplación íntima, un eco sutil de la inagotable complejidad del ser y su transitar por el tiempo.`;
+
+                // Título más evocador
+                let titleSeed = coreConcept.split(" ").slice(0, 3).join(" ") || `Impresión ${i+1}`;
+                let title = `Estudio sobre ${titleSeed} (Op. ${lastName} ${i+1})`;
+                if (title.length > 70) title = title.substring(0, 67) + "...";
+
+
+                const hypotheticalYear = currentYear + 10 + Math.floor(Math.random() * 15 + i * 3);
 
                 works.push({
                     title: title,
                     year: `${hypotheticalYear} (Hipotético)`,
                     description: description,
-                    imagePlaceholder: placeholder
+                    imageUrl: `https://picsum.photos/seed/${artistFullName.replace(/\s/g, '_')}_evocative_${i}/600/400`
                 });
             }
             return works;
         }
 
-        function addToHistory(artistName, status) {
+        function addToHistory(artistName, status) { // Misma función
             const timestamp = new Date().toLocaleString('es-ES');
-            searchHistory.push({
-                timestamp: timestamp,
-                artist: artistName,
-                status: status // "Datos curados", "Simulado con Wikipedia", "Simulado (sin Wikipedia)"
-            });
-            // Habilitar el botón de descarga si hay historial
+            searchHistory.push({ timestamp, artist: artistName, status });
             document.getElementById('downloadHistoryBtn').disabled = false;
         }
 
-        async function generateLegacy() {
+        function openImageInNewTab(imageUrl) { // Misma función
+            window.open(imageUrl, '_blank');
+        }
+
+        async function generateLegacy() { // Misma función general, solo cambian mensajes
+            document.getElementById('aiDisclaimer').style.display = 'block'; 
             const artistNameInput = document.getElementById('artistName');
             const artistNameOriginal = artistNameInput.value.trim();
             const artistNameNormalized = artistNameOriginal.toLowerCase();
@@ -394,20 +533,22 @@
                 return;
             }
 
-            resultsDiv.innerHTML = `<p class="loading-message">Explorando el legado potencial de ${artistNameOriginal}...</p>`;
-
+            resultsDiv.innerHTML = `<p class="loading-message">Concibiendo el legado potencial de ${artistNameOriginal}, con una mirada evocadora...</p>`;
             let works;
             let output = `<h2>Legado Hipotético de ${artistNameOriginal}:</h2>`;
             let historyStatus = "";
 
             if (hypotheticalWorksDB[artistNameNormalized]) {
                 works = hypotheticalWorksDB[artistNameNormalized];
-                historyStatus = "Resultados de base de datos interna";
+                historyStatus = "Resultados de base de datos interna (descripciones curadas)";
+                // (El resto de la lógica para obras predefinidas es igual)
                 setTimeout(() => { 
                     works.forEach(work => {
                         output += `
                             <div class="artwork">
-                                <div class="placeholder-image">${work.imagePlaceholder}</div>
+                                <div class="placeholder-image">
+                                    <img src="${work.imageUrl}" alt="Representación conceptual de ${work.title}" onclick="openImageInNewTab('${work.imageUrl}')">
+                                </div>
                                 <h3>${work.title}</h3>
                                 <p><strong>Año (Hipotético):</strong> ${work.year}</p>
                                 <p><strong>Descripción:</strong> ${work.description}</p>
@@ -416,31 +557,33 @@
                     });
                     resultsDiv.innerHTML = output;
                     addToHistory(artistNameOriginal, historyStatus);
-                }, 500);
-            } else {
-                output += `<p class="info-message"><small>Consultando Wikipedia para obtener inspiración sobre ${artistNameOriginal}...</small></p>`;
-                resultsDiv.innerHTML = output; 
+                }, 300);
 
+            } else {
+                resultsDiv.innerHTML = output + `<p class="info-message"><small>Consultando Wikipedia para ${artistNameOriginal} e inspirando descripciones simuladas con mayor detalle y evocación...</small></p>`;
+                
                 const wikiInfo = await fetchWikipediaInfo(artistNameOriginal);
                 
                 output = `<h2>Legado Hipotético de ${artistNameOriginal}:</h2>`;
                 if (wikiInfo) {
-                    output += `<div class="wikipedia-extract"><strong>Extracto de Wikipedia:</strong> ${wikiInfo}</div>`;
-                    historyStatus = "Simulado con información de Wikipedia";
+                    output += `<div class="wikipedia-extract"><strong>Extracto de Wikipedia para ${artistNameOriginal} (usado como inspiración lejana para la simulación):</strong> ${wikiInfo}</div>`;
+                    historyStatus = "Descripciones simuladas enriquecidas (con inspiración de Wikipedia)";
                 } else {
-                    output += `<p class="info-message"><small>No se encontró información en Wikipedia para ${artistNameOriginal} o hubo un error. Generando una simulación más genérica...</small></p>`;
-                    historyStatus = "Simulado (sin información de Wikipedia)";
+                    output += `<p class="info-message"><small>No se encontró información específica en Wikipedia. Generando descripciones simuladas enriquecidas basadas en conceptos artísticos generales...</small></p>`;
+                    historyStatus = "Descripciones simuladas enriquecidas (sin inspiración específica de Wikipedia)";
                 }
                 
                 works = simulateWorksBasedOnInfo(artistNameOriginal, wikiInfo);
                 
                 if (!works || works.length === 0) { 
-                    output += '<p>No se pudo generar un legado hipotético. ¡Quizás su genio es verdaderamente inimitable!</p>';
+                    output += '<p>No se pudo concebir un legado hipotético en esta simulación.</p>';
                 } else {
                     works.forEach(work => {
                         output += `
                             <div class="artwork">
-                                <div class="placeholder-image">${work.imagePlaceholder}</div>
+                                <div class="placeholder-image">
+                                     <img src="${work.imageUrl}" alt="Representación conceptual de ${work.title}" onclick="openImageInNewTab('${work.imageUrl}')">
+                                </div>
                                 <h3>${work.title}</h3>
                                 <p><strong>Año (Hipotético):</strong> ${work.year}</p>
                                 <p><strong>Descripción:</strong> ${work.description}</p>
@@ -453,54 +596,32 @@
             }
         }
 
-        function downloadHistory() {
+        function downloadHistory() { // Misma función
             if (searchHistory.length === 0) {
                 alert("El historial de búsqueda está vacío.");
                 return;
             }
-
             let historyText = "Historial de Búsquedas Creativas - Explorador de Legados Artísticos\n";
+            historyText += "Aviso: Las imágenes son placeholders visuales, no generadas por IA. Las descripciones son simulaciones.\n";
             historyText += "=====================================================================\n\n";
-            
             searchHistory.forEach(entry => {
                 historyText += `Fecha y Hora: ${entry.timestamp}\n`;
                 historyText += `Artista Buscado: ${entry.artist}\n`;
                 historyText += `Tipo de Resultado: ${entry.status}\n`;
                 historyText += "---------------------------------------------------------------------\n";
             });
-
             historyText += `\nHistorial descargado el: ${new Date().toLocaleString('es-ES')}\n`;
-
             const blob = new Blob([historyText], { type: 'text/plain;charset=utf-8' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
             const now = new Date();
             const timestampFile = `${now.getFullYear()}${(now.getMonth()+1).toString().padStart(2, '0')}${now.getDate().toString().padStart(2, '0')}_${now.getHours().toString().padStart(2, '0')}${now.getMinutes().toString().padStart(2, '0')}`;
             link.download = `historial_legados_artisticos_${timestampFile}.txt`;
-            
-            document.body.appendChild(link); // Necesario para Firefox
+            document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
-            URL.revokeObjectURL(link.href); // Liberar el objeto URL
+            URL.revokeObjectURL(link.href);
         }
-
-        // Opcional: Cargar historial desde sessionStorage al iniciar (si se quiere persistencia entre recargas de la misma pestaña)
-        // window.onload = () => {
-        //     const storedHistory = sessionStorage.getItem('exploradorLegadosHistory');
-        //     if (storedHistory) {
-        //         searchHistory = JSON.parse(storedHistory);
-        //         if (searchHistory.length > 0) {
-        //             document.getElementById('downloadHistoryBtn').disabled = false;
-        //         }
-        //     }
-        // };
-
-        // Opcional: Guardar historial en sessionStorage antes de que la página se cierre/recargue
-        // window.onbeforeunload = () => {
-        //     sessionStorage.setItem('exploradorLegadosHistory', JSON.stringify(searchHistory));
-        // };
-
-
     </script>
 </body>
 </html>
