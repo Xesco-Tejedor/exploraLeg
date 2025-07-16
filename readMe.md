@@ -4,7 +4,7 @@
 
 Una aplicació interactiva que utilitza intel·ligència artificial per imaginar i visualitzar les possibles creacions futures d’artistes icònics de la història de l’art.
 
-![Cyberpunk Art Explorer](https://img.shields.io/badge/Status-Active://img.shields.io/badge/React](https://img.shields.io/b](https://img.shields.io/b 🚀 Prova l’Aplicació
+/src/exploraLeg.png(https://hatchcanvas.com/public/proj_cVYUEOp3Z3Z0dweMqSEQM/shape:Juc3bwwF84F1VfWFZv2jQ) 🚀 Prova l’Aplicació
 
 ### ✨ **🎨 [UTILITZA L’APLICACIÓ EN LÍNIA](https://hatchcanvas.com/public/proj_cVYUEOp3Z3Z0dweMqSEQM/shape:Juc3bwwF84F1VfWFZv2jQ)**
 
