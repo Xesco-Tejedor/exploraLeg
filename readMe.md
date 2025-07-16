@@ -1,16 +1,19 @@
 # 🎨 Explorador de Llegats Artístics
-
+![exploraLeg](/src/exploraLeg.png)
 ## I si...?™️
 
 Una aplicació interactiva que utilitza intel·ligència artificial per imaginar i visualitzar les possibles creacions futures d’artistes icònics de la història de l’art.
 
-(/src/exploraLeg.png)(https://hatchcanvas.com/public/proj_cVYUEOp3Z3Z0dweMqSEQM/shape:Juc3bwwF84F1VfWFZv2jQ) 🚀 Prova l’Aplicació
+## 🚀 Prova'l Ara Online! 🚀
 
-### ✨ **🎨 [UTILITZA L’APLICACIÓ EN LÍNIA](https://hatchcanvas.com/public/proj_cVYUEOp3Z3Z0dweMqSEQM/shape:Juc3bwwF84F1VfWFZv2jQ)**
+No cal instal·lar res. Pots començar a donar forma a les teves paraules a l'instant accedint a la demo online.
+
+> ### [Accedeix a la Demo Online Fent Clic Aquí](https://hatchcanvas.com/public/proj_cVYUEOp3Z3Z0dweMqSEQM/shape:Juc3bwwF84F1VfWFZv2jQ)
 
 ---
 
-![exploraLeg](/src/exploraLeg.png)
+![phrase](/assets/phrase.jpg)
+
 
 **Explora ara mateix!** Fes clic a l’enllaç de dalt per accedir directament a l’aplicació web sense necessitat d’instal·lació.
 
