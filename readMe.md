@@ -8,6 +8,10 @@ Una aplicació interactiva que utilitza intel·ligència artificial per imaginar
 
 ### ✨ **🎨 [UTILITZA L’APLICACIÓ EN LÍNIA](https://hatchcanvas.com/public/proj_cVYUEOp3Z3Z0dweMqSEQM/shape:Juc3bwwF84F1VfWFZv2jQ)**
 
+---
+
+![exploraLeg](/src/exploraLeg.png)
+
 **Explora ara mateix!** Fes clic a l’enllaç de dalt per accedir directament a l’aplicació web sense necessitat d’instal·lació.
 
 ### 📖 **📋 VEURE DOCUMENTACIÓ EN LÍNIA**
