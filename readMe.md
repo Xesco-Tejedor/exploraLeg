@@ -12,7 +12,7 @@ No cal instal·lar res. Pots començar a donar forma a les teves paraules a l'in
 
 ---
 
-![phrase](/assets/phrase.jpg)
+![phrase](/src/exploraLegApp.jpg)
 
 
 **Explora ara mateix!** Fes clic a l’enllaç de dalt per accedir directament a l’aplicació web sense necessitat d’instal·lació.
